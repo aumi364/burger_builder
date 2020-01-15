@@ -1,0 +1,10 @@
+.TotalPrice {
+  background-color: rgba(230, 223, 223, 0.5);
+  padding: 5px 0;
+  width: 100%;
+}
+.Checkout {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
