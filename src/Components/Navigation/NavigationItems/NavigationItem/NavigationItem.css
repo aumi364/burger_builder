@@ -1,21 +1,46 @@
 .NavigationItem {
-  margin: 0;
+  margin: 10px 0;
   box-sizing: border-box;
-  display: flex;
-  height: 100%;
-  align-items: center;
+  display: block;
+  width: 100%;
+
+
 }
 .NavigationItem a {
   color: white;
   text-decoration: none;
-  padding: 16px 10px;
-
-  border-bottom: 4px solid transparent;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 4px;
+  font-weight: 500;
 }
-.NavigationItem a:hover,
+
 .NavigationItem a:active,
 .NavigationItem a.active {
+
+  color: black;
   background: linear-gradient(#d1a52d, #ffd000);
-  border-bottom: 4px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border-bottom: 4px solid black;
+}
+.NavigationItem a:hover{
+  background: rgba(235, 233, 233,.5);
+}
+
+@media (min-width:800px){
+  .NavigationItem {
+    margin: 0;
+
+    display: flex;
+    height: 100%;
+    width:auto;
+    align-items: center;
+  }
+  .NavigationItem a {
+    color: white;
+
+    padding: 16px 10px;
+    height:100%;
+  }
+
 }

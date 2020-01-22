@@ -1,5 +1,11 @@
 .Content {
   margin-top: 56px;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
+}
+@media (min-width:800px) {
+  .Content {
+    margin-top: 56px;
+    flex-flow: row;
+  }
 }
